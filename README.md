@@ -1,4 +1,4 @@
-## Results and Documentation
+# Results and Documentation
 
 To ensure efficiency and proper load balancing I used a ticketing
 system. Each thread would take a number to evaluate and when it
@@ -25,11 +25,11 @@ Prime range: 10^7
 - 8 threads : ~0.4 seconds
 
 
-## Building and Compiling
+# Building and Compiling
 
 To compile you will need GCC and optionally Make.
 
-# Method 1: using GCC
+## Method 1: using GCC
 
 To compile using GCC navigate to directory where the source file
 is then run the command:
@@ -42,7 +42,7 @@ Or
 
 This should generate a binary file named "main".
 
-# Method 2: using Make
+## Method 2: using Make
 
 To use make to build this program first navigate to the directory
 with the source file then run the command:
@@ -52,7 +52,7 @@ with the source file then run the command:
 This should generate a binary file named "main".
 
 
-## Runing
+# Runing
 
 To run the program use:
 
