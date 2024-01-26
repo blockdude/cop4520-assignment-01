@@ -44,7 +44,7 @@ This should generate a binary file named "main".
 
 ## Method 2: using Make
 
-To use make to build this program first navigate to the directory
+To use Make to build this program first navigate to the directory
 with the source file then run the command:
 
 > make
@@ -63,5 +63,5 @@ Or if you are using Make:
 > make run
 
 This should generate a file named "primes.txt" that will contain
-execution time ( in seconds ), total number of primes int the below 10^8, sum of
+execution time ( in seconds ), total number of primes below 10^8, sum of
 all primes below 10^8, and the 10 largest primes in said range.
