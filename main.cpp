@@ -105,15 +105,11 @@ static struct prime_data compute_primes( int r )
 
 	// init worker threads
 	for ( size_t i = 0; i < THREAD_COUNT; i++ )
-	{
 		workers[ i ] = std::thread( compute_primes_util, &data, &ticket );
-	}
 
 	// wait for threads to finish
 	for ( size_t i = 0; i < THREAD_COUNT; i++ )
-	{
 		workers[ i ].join();
-	}
 
 	return data;
 }
@@ -127,10 +123,10 @@ static void write_prime_data( struct prime_data *data, double dur )
 	f << dur << " " << data->primes_total << " " << data->primes_sum << std::endl;
 
 	f << data->top_primes[ TOP_PRIMES_COUNT - 1 ];
+
 	for ( ssize_t i = data->ntop_primes - 2; i >= 0; i-- )
-	{
 		f << ", " << data->top_primes[ i ];
-	}
+
 	f << std::endl;
 
 	f.close();
