@@ -7,6 +7,9 @@
 # Unignore all dir
 !*/
 
+# Unignore Makefile
+!Makefile
+
 # ignore directories
 .vim
 
